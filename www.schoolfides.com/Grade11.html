@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 11</title>
+    <link rel="stylesheet" href="css/Grade11.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <script src="javascript/grade11.js"></script>
+</head>
+<body>
+    <header>
+        <div><img src="images/icon.png" alt="icon" width="30"> Grade 11 mathematics</div>
+    </header>
+    <br>
+    <div id="titles"><h3>Choose a topic to practice below</h3> <small id="datetime"></small></div>
+    <br>
+
+    <div class="grid">
+    <div id="topics">
+        <ul>
+            <li><h4>EXPONENTS AND SURDS</h4></li>
+            <li onclick="equations()"><h4>EQUATIONS AND INEQUALITIES</h4></li>
+            <li><h4>TRIGONOMETRY</h4></li>
+            <li><h4>EUCLIDEAN GEOMETRY </h4></li>
+            <li><h4>ANALYTICAL GEOMETRY </h4></li>
+            <li><h4>FUNCTIONS </h4></li>
+            <li><h4>TRIGONOMETRY (Ratio rules) </h4></li>
+            <li><h4>STATISTICS </h4></li>
+            <li><h4>PROBABILITY </h4></li>
+            <li><h4>NUMBER PATTERNS </h4></li>
+            <li><h4>REVISION </h4></li>
+            <li><h4>Exam </h4></li>
+            
+            
+        </ul>
+    </div>
+    <div class="board" id="board">Random questions
+
+    </div>
+</div>
+
+    <div id="maths">
+        <input type="text" name="math" id="m2" placeholder="solve" hidden>
+    </div>
+    <footer>
+        <div>Feel free to contact us for extra help or any queries</div>
+    </footer>
+
+    <script>
+        let me = document.getElementById("datetime");
+        let dates = new Date();
+        me.innerHTML += dates.getDate() + "." + (dates.getMonth()+1)+ "."+dates.getFullYear() + " " +dates.getHours() + ":" + dates.getMinutes()
+    </script>
+</body>
+</html>
