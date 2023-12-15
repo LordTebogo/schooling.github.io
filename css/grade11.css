@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+}
+header div img{
+    transform: translateY(7px);
+}
+header{
+    background-color: blue;
+    color: white;
+}
+body{
+    background-color: skyblue;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 30px;
+    border: solid;
+}
+#topics{
+    margin-left: 30px;
+    width: -moz-fit-content;
+    width: fit-content;
+    
+}
+#topics ul li{
+    cursor: pointer;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px;
+}
+
+#topics ul li:hover{
+    color: blue;
+    font-family: 'Trebuchet MS';
+}
+
+#board ol li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+input{
+    width: 50px;
+}
+#datetime{
+    position: absolute;
+    right: 3px;
+}
